@@ -119,6 +119,22 @@
             color: white;
             font-size: 24px;
         }
+        .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
         .gallery {
     display: flex;
     justify-content: center;
@@ -217,11 +233,17 @@
         <a href="upi://pay?pa=your-upi-id@upi" class="donate-btn">💰 देणगी द्या</a>
     </div>
 
-    <div class="social-icons">
-        <a href="#" target="_blank">🔵 Facebook</a>
-        <a href="#" target="_blank">🟣 Instagram</a>
-        <a href="#" target="_blank">🔷 WhatsApp</a>
-    </div>
+    <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="images/facebook-icon.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=+919876543210" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+</div>
 
     <script>
         function showSection(id) {
