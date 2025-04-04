@@ -119,6 +119,24 @@
             color: white;
             font-size: 24px;
         }
+        .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 250px;  /* इथे फोटोचा योग्य आकार ठेवा */
+    height: auto;  /* ऑटो हाइट म्हणजे फोटो डीफॉर्म होणार नाही */
+    border-radius: 10px; /* कोपरे थोडे वळलेले दिसतील */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* होवर केल्यावर फोटो थोडा झूम होईल */
+}
+
     </style>
 </head>
 <body>
@@ -173,9 +191,9 @@
 <div id="gallery" class="section">
            <div class="gallery">
     <h2>🖼️ गॅलरी</h2>
-    <img src="images/PHOTO1.jpeg" alt="फोटो1">
-    <img src="images/PHOTO2.jpeg" alt="फोटो2">
-    <img src="images/PHOTO3.jpeg" alt="फोटो3">
+    <img src="images/PHOTO7.jpeg" alt="फोटो 7">
+    <img src="images/PHOTO8.jpeg" alt="फोटो 8">
+    <img src="images/PHOTO9.jpeg" alt="फोटो 9">
 
         </div>
     </div>
