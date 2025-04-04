@@ -135,30 +135,30 @@
 .social-links a:hover img {
     transform: scale(1.2);
 }
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>फोटो गॅलरी - स्लायडर</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .swiper {
-            width: 80%;
-            height: 400px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+ .gallery-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+}
 
-    </style>
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
 </head>
 <body>
 
@@ -209,30 +209,15 @@
         <p>🔹 <b>भीम जयंती</b>: डॉ. बाबासाहेब आंबेडकर यांच्या जयंतीनिमित्त विविध धम्मकार्यक्रम.</p>..</p>
     </div>
 
-<<div class="gallery-section">
+<div class="gallery-section">
     <h2 class="gallery-title">📷 गॅलरी</h2>
-    <!-- Swiper स्लायडर -->
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/PHOTO1.jpg" alt="फोटो 1"></div>
-        <div class="swiper-slide"><img src="images/PHOTO2.jpg" alt="फोटो 2"></div>
-        <div class="swiper-slide"><img src="images/PHOTO3.jpg" alt="फोटो 3"></div>
-        <div class="swiper-slide"><img src="images/PHOTO4.jpg" alt="फोटो 4"></div>
-        <div class="swiper-slide"><img src="images/PHOTO5.jpg" alt="फोटो 5"></div>
-        <div class="swiper-slide"><img src="images/PHOTO6.jpg" alt="फोटो 6"></div>
-        <div class="swiper-slide"><img src="images/PHOTO7.jpeg" alt="फोटो 7"></div>
-        <div class="swiper-slide"><img src="images/PHOTO8.jpeg" alt="फोटो 8"></div>
-        <div class="swiper-slide"><img src="images/PHOTO9.jpeg" alt="फोटो 9"></div>
-        <div class="swiper-slide"><img src="images/PHOTO10.jpeg" alt="फोटो 10"></div>
-        <div class="swiper-slide"><img src="images/PHOTO11.jpeg" alt="फोटो 11"></div>
-        <div class="swiper-slide"><img src="images/PHOTO12.jpg" alt="फोटो 12"></div>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="images/photo1.jpg" alt="फोटो 1">
+            <img src="images/photo2.jpg" alt="फोटो 2">
+            <img src="images/photo3.jpg" alt="फोटो 3">
+        </div>
     </div>
-</div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-
     </div>
 
     <div id="karyakarini" class="section">
